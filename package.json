@@ -25,7 +25,8 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
-  "main": "dist/main.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "directories": {
     "test": "test"
   },

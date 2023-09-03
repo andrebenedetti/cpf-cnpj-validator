@@ -8,7 +8,12 @@ const config = {
   entry: "./src/index.ts",
   output: {
     path: path.resolve(__dirname, "dist"),
-    library: "cpf_cnpj_validator",
+    filename: "index.js",
+    globalObject: "this",
+    library: {
+      name: "cpfAndCnpjValidator",
+      type: "umd",
+    },
   },
   plugins: [
     // Add your plugins here
