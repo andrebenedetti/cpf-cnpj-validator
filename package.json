@@ -1,7 +1,7 @@
 {
-  "name": "my-webpack-project",
+  "name": "@andrebenedetti/cpf-cnpj-validator",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "Fork and rewrite of carvalhoviniciusluiz/cpf-cnpj-validator with only essential code to validate CPFs and CNPJs.",
   "scripts": {
     "test": "jest",
     "build": "webpack --mode=production --node-env=production",
@@ -10,8 +10,8 @@
     "watch": "webpack --watch"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "andrebenedetti",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.4",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
@@ -24,5 +24,17 @@
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
-  }
+  },
+  "main": "dist/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrebenedetti/cpf-cnpj-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrebenedetti/cpf-cnpj-validator/issues"
+  },
+  "homepage": "https://github.com/andrebenedetti/cpf-cnpj-validator#readme"
 }
