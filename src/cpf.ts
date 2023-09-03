@@ -12,9 +12,6 @@ const BLACKLIST = [
   "12345678909",
 ];
 
-const STRICT_STRIP_REGEX = /[.-]/g;
-const LOOSE_STRIP_REGEX = /[^\d]/g;
-
 const verifierDigit = (digits: string): number => {
   const numbers = digits.split("").map((number) => {
     return parseInt(number, 10);
@@ -27,13 +24,12 @@ const verifierDigit = (digits: string): number => {
   return mod < 2 ? 0 : 11 - mod;
 };
 
-const strip = (number: string, strict?: boolean): string => {
-  const regex = strict ? STRICT_STRIP_REGEX : LOOSE_STRIP_REGEX;
-  return (number || "").replace(regex, "");
+const strip = (number: string): string => {
+  return (number || "").replace(/\D/g, "");
 };
 
-export const isValidCpf = (number: string, strict?: boolean): boolean => {
-  const stripped = strip(number, strict);
+export const isValidCpf = (number: string): boolean => {
+  const stripped = strip(number);
 
   if (stripped.length !== 11) {
     return false;
