@@ -5,5 +5,3 @@ Fork and rewrite of ![cpf-cnpj-validator](https://github.com/carvalhoviniciuslui
 Fork e reescrita somente com código essencial para validar CPFs e CNPJs.
 
 [MIT](http://opensource.org/licenses/MIT)
-
-Copyright (c) 2020-present
