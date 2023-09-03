@@ -24,7 +24,7 @@ function verifierDigit(digits: string): number {
   return mod < 2 ? 0 : 11 - mod;
 }
 
-export function validateCnpj(cnpj: string): boolean {
+export function isValidCnpj(cnpj: string): boolean {
   const stripped = (cnpj || "").replace(/[-\\/.]/g, "");
 
   if (stripped.length !== 14) {
