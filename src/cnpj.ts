@@ -11,8 +11,6 @@ const BLACKLIST = [
   "99999999999999",
 ];
 
-const STRICT_STRIP_REGEX: RegExp = /[-\\/.]/g;
-
 function verifierDigit(digits: string): number {
   const weights = [5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2];
   digits.length === 13 && weights.unshift(6);
@@ -26,12 +24,8 @@ function verifierDigit(digits: string): number {
   return mod < 2 ? 0 : 11 - mod;
 }
 
-function strip(cnpj: string): string {
-  return (cnpj || "").replace(STRICT_STRIP_REGEX, "");
-}
-
 export function validateCnpj(cnpj: string): boolean {
-  const stripped = strip(cnpj);
+  const stripped = (cnpj || "").replace(/[-\\/.]/g, "");
 
   if (stripped.length !== 14) {
     return false;
