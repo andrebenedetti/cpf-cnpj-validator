@@ -19,3 +19,8 @@ isValidCnpj("12345678901234");
 isValidCpf("12345678901");
 ```
 
+## Notes on validation
+
+All non-numeric characters will be removed before validation. For instance, this will return true:
+
+`isValidCpf("20@923##%14@!8,230"); // returns true`
