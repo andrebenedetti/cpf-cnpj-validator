@@ -1,4 +1,4 @@
-const BLACKLIST: Array<string> = [
+const BLACKLIST = [
   "00000000000000",
   "11111111111111",
   "22222222222222",
@@ -44,7 +44,6 @@ export function validateCnpj(cnpj: string): boolean {
   let numbers = stripped.slice(0, 12);
   numbers += verifierDigit(numbers);
   numbers += verifierDigit(numbers);
-  console.log(numbers);
 
   return numbers === stripped;
 }
