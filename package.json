@@ -1,63 +1,15 @@
 {
   "name": "cpf-cnpj-validator",
-  "version": "1.1.0",
-  "description": "Valida e formata strings de CPF ou CNPJ.",
-  "author": "Carvalho, Vinicius Luiz <carvalho.viniciusluiz@gmail.com>",
-  "license": "MIT",
-  "main": "dist/cpf-cnpj-validator.cjs.js",
-  "types": "types/index.d.ts",
-  "module": "dist/cpf-cnpj-validator.es.js",
+  "version": "1.0.0",
+  "description": "Fork and rewrite of ![cpf-cnpj-validator](https://github.com/carvalhoviniciusluiz/cpf-cnpj-validator) with only essential code to validate CPFs and CNPJs.",
+  "main": "bili.config.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "build": "bili src/index.ts",
-    "test": "ts-node jest.startup.ts --detectOpenHandles --forceExit --no-cache",
-    "pretest": "npm run build",
-    "prepublishOnly": "npm run test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "dist/",
-    "types/"
-  ],
-  "jest": {
-    "testEnvironment": "node",
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/carvalhoviniciusluiz/cpf-cnpj-validator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/carvalhoviniciusluiz/cpf-cnpj-validator/issues"
-  },
-  "homepage": "https://github.com/carvalhoviniciusluiz/cpf-cnpj-validator#readme",
-  "devDependencies": {
-    "@types/jest": "^23.3.14",
-    "bili": "^3.4.2",
-    "jest": "^23.6.0",
-    "jest-cli": "^23.6.0",
-    "rollup-plugin-typescript2": "^0.29.0",
-    "ts-jest": "^23.10.5",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.5.3"
-  },
-  "peerDependencies": {
-    "joi": "^17.4.2"
-  },
-  "keywords": [
-    "node",
-    "joi",
-    "cpf",
-    "cnpj",
-    "validator"
-  ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
