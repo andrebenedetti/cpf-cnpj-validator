@@ -1,6 +1,6 @@
 {
   "name": "@andrebenedetti/cpf-cnpj-validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fork and rewrite of carvalhoviniciusluiz/cpf-cnpj-validator with only essential code to validate CPFs and CNPJs.",
   "scripts": {
     "test": "jest",
