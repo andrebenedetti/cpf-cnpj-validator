@@ -35,10 +35,6 @@ const strip = (number: string, strict?: boolean): string => {
 export const isValidCpf = (number: string, strict?: boolean): boolean => {
   const stripped = strip(number, strict);
 
-  if (!stripped) {
-    return false;
-  }
-
   if (stripped.length !== 11) {
     return false;
   }
