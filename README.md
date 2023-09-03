@@ -12,10 +12,10 @@ Fork e reescrita somente com código essencial para validar CPFs e CNPJs.
 
 ## Usage
 
-`
+```
 import { isValidCnpj, isValidCpf } from "@andrebenedetti/cpf-cnpj-validator";
 
 isValidCnpj("12345678901234");
 isValidCpf("12345678901");
-`
+```
 
