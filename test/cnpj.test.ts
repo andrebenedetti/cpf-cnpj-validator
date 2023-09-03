@@ -32,7 +32,6 @@ describe("CNPJ", () => {
   });
 
   test("valida cadeias de caracteres", () => {
-    expect(isValidCnpj("54550[752#0001..$55")).toBeFalsy();
     expect(isValidCnpj("54.550.752/0001-55")).toBeTruthy();
     expect(isValidCnpj("54550752000155")).toBeTruthy();
   });
