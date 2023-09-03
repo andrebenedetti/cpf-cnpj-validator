@@ -39,9 +39,9 @@ export const isValidCpf = (number: string): boolean => {
     return false;
   }
 
-  let numbers = stripped.substr(0, 9);
+  let numbers = stripped.slice(0, 9);
   numbers += verifierDigit(numbers);
   numbers += verifierDigit(numbers);
 
-  return numbers.substr(-2) === stripped.substr(-2);
+  return numbers === stripped;
 };

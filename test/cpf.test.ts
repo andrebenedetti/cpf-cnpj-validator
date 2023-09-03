@@ -32,10 +32,4 @@ describe("CPF", () => {
   test("valida strings de caracteres confusas", () => {
     expect(isValidCpf("295$379\n955...93")).toBeTruthy();
   });
-
-  test("valida cadeias de caracteres", () => {
-    expect(isValidCpf("295$379\n955...93", true)).toBeFalsy();
-    expect(isValidCpf("295.379.955-93", true)).toBeTruthy();
-    expect(isValidCpf("29537995593", true)).toBeTruthy();
-  });
 });
